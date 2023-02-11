@@ -1,4 +1,4 @@
-lass HashMap: #class of name hashmap or hashtable
+class HashMap: #class of name hashmap or hashtable
         def __init__(self): #constructor is defined with 2 variables 
                 self.size = 7  #setting an size of array as 6
                 self.map = [None] * self.size #creating an empty array of size 6
