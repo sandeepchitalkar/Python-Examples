@@ -15,16 +15,16 @@ def insertHash(value): #this function is used to insert values into hash table
         print("Collision : arr",key,"has element",hashTable[key],"already!");
         print("Unable to insert", value, "into hash table");
         i=0;count=0;
-        while(i<7):
+        while(i<size):
             if(hashTable[i]!=-1):
                 count+=1;
             i+=1;
-        if(count==7):#checking for the hash full
+        if(count==size):#checking for the hash full
             print("Hash Table Is Full Hence ",value," Can not Be Inserted");
             print(hashTable);
         else:  #logic of linear probiing
             i=key;
-            for i in range(key, 7):
+            for i in range(key, size):
                 key1=(i+1)%size;  #calculating next empty location address using linear probing formula
                 if(hashTable[key1] == -1): #if location is empty insert data 
                     hashTable[key1] = value;
